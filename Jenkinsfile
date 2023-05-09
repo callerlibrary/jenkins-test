@@ -1,9 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
-          steps {
-                sh 'npm --version'
+        stage('Build') {
+            steps {
+              echo 'Building..'
+              sh 'npm --version'
             }
         }
     }
