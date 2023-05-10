@@ -5,6 +5,8 @@ pipeline {
             steps {
               echo 'Building..'
               sh 'npm --version'
+              sh 'docker -v'
+              sh 'docker compose version'
             }
         }
     }
